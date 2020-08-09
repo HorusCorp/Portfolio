@@ -32,9 +32,9 @@ function App() {
       
       <div className='titre'>
         <div style={{width:'40%',display:'flex',justifyContent:'flex-end',marginRight:'55px'}}>
-          <div className='avatar-pics'></div>
+          <div className='avatar-pics' data-aos="fade-right" data-aos-duration="2500"></div>
         </div>
-        <div className='titre-text'>
+        <div className='titre-text' data-aos="fade-left" data-aos-duration="2500">
           <h1 className='titre-h1'>{translation(lang,"titre")}</h1>
           <span className='titre-soustitre'>{translation(lang,"soustitre")}</span>
           <p className='titre-txt'>{translation(lang,"titre-txt")}</p>
@@ -79,8 +79,8 @@ function App() {
         <span className='titre-soustitre'>{translation(lang,"soustitre03")}</span>
 
         <div className='project'>
-          <img src='./ametyst.png' alt='' width="520px" height="300px"></img>
-          <div className='project-txt'>
+          <img src='./ametyst.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
+          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
             <h3>{translation(lang,"titre04")}</h3>
             <span>{translation(lang,"soustitre04")}</span>
             <div className='language-used'>
@@ -94,36 +94,16 @@ function App() {
             </div>
             <p>{translation(lang,"p04")}</p>
             <div className='project-btn'>
-              <div className='btn-black'>{translation(lang,"btnblack01")}</div>
-              <div className='btn-black'>{translation(lang,"btnblack02")}</div>
+              <a href='https://ametyst.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
+              <a href='https://github.com/HorusCorp/AssoGestionCotisation' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
             </div>
           </div>
         </div>
 
 
         <div className='project'>
-          <img src='./gameshop.png' alt='' width="520px" height="300px"></img>
-          <div className='project-txt'>
-            <h3>{translation(lang,"titre06")}</h3>
-            <span>{translation(lang,"soustitre06")}</span>
-            <div className='language-used'>
-                <div>REACT</div>
-                <div>REDUX</div>
-                <div>MONGO DB</div>
-                <div>NODE & EXPRESS</div>
-                <div>CSS</div>
-            </div>
-            <p>{translation(lang,"p06")}</p>
-            <div className='project-btn'>
-              <div className='btn-black'>{translation(lang,"btnblack01")}</div>
-              <div className='btn-black'>{translation(lang,"btnblack02")}</div>
-            </div>
-          </div>
-        </div>
-
-        <div className='project'>
-          <img src='./Sungym.png' alt='' width="520px" height="300px"></img>
-          <div className='project-txt'>
+          <img src='./Sungym.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
+          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
             <h3>{translation(lang,"titre05")}</h3>
             <span>{translation(lang,"soustitre05")}</span>
             <div className='language-used'>
@@ -136,11 +116,52 @@ function App() {
             </div>
             <p>{translation(lang,"p05")}</p>
             <div className='project-btn'>
-              <div className='btn-black'>{translation(lang,"btnblack01")}</div>
-              <div className='btn-black'>{translation(lang,"btnblack02")}</div>
+              <a href='' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
+              <a href='https://github.com/HorusCorp/SunGym' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
             </div>
           </div>
         </div>
+
+      
+        <div className='project'>
+          <img src='./gameshop.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
+          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
+            <h3>{translation(lang,"titre06")}</h3>
+            <span>{translation(lang,"soustitre06")}</span>
+            <div className='language-used'>
+                <div>REACT</div>
+                <div>REDUX</div>
+                <div>MONGO DB</div>
+                <div>NODE & EXPRESS</div>
+                <div>CSS</div>
+            </div>
+            <p>{translation(lang,"p06")}</p>
+            <div className='project-btn'>
+            <a href='https://peaceful-anchorage-19337.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
+            <a href='https://peaceful-anchorage-19337.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
+            </div>
+          </div>
+        </div>
+
+        <div className='project'>
+          <img src='./ivaliceFR.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
+          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
+            <h3>{translation(lang,"titre07")}</h3>
+            <span>{translation(lang,"soustitre07")}</span>
+            <div className='language-used'>
+                <div>REACT</div>
+                <div>NODE</div>
+                <div>CSS</div>
+            </div>
+            <p>{translation(lang,"p07")}</p>
+            <div className='project-btn'>
+              <a href='http://www.ivalicefr.developpeur-lyon.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
+              <a href='https://github.com/HorusCorp/FFWOTV' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a> 
+            </div>
+          </div>
+        </div>
+
+       
 
 
       </div>
