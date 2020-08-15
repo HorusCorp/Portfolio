@@ -30,6 +30,8 @@ function App() {
 
       </div>
       
+
+
       <div className='titre'>
         <div style={{width:'40%',display:'flex',justifyContent:'flex-end',marginRight:'55px'}}>
           <div className='avatar-pics' data-aos="fade-right" data-aos-duration="2500"></div>
@@ -48,6 +50,8 @@ function App() {
         <img src='../react.png' alt='' width='90' height='35'></img>
         <img src='../nextjs.png' alt='' width='90' height='35'></img>
       </div>
+
+
 
 
       <div className='presentation'>
@@ -71,6 +75,8 @@ function App() {
         </div>
 
       </div>
+
+
 
 
       <div className='portfolio'>
@@ -116,7 +122,7 @@ function App() {
             </div>
             <p>{translation(lang,"p05")}</p>
             <div className='project-btn'>
-              <a href='' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
+              <a href='#' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
               <a href='https://github.com/HorusCorp/SunGym' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
             </div>
           </div>
@@ -159,6 +165,38 @@ function App() {
               <a href='https://github.com/HorusCorp/FFWOTV' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a> 
             </div>
           </div>
+        </div>
+
+
+
+        <div className='contact-zone'>
+
+          <h2 className='titre-h1'>{translation(lang,"mailh2")}</h2>
+          <span className='titre-soustitre'>{translation(lang,"mailspan")}</span>
+    
+          <div className="form-links">
+
+            <div className='form'>
+              <input type="text" placeholder={translation(lang,"mailinput1")}></input>
+              <input type='email' placeholder={translation(lang,"mailinput2")}></input>
+              <textarea placeholder={translation(lang,"mailtextarea")}></textarea>
+              <div className='btn-black' type='submit'>{translation(lang,"mailbtn")}<img src='' alt=''></img></div>
+            </div>
+
+            <div className='links'>
+              
+                  <a className='linkedin-btn' href='' target='_blank'>{translation(lang,"linkedinbtn")}</a>
+                  <a className='github-btn' href='' target='_blank'>{translation(lang,"githubbtn")}</a>
+                  <a className='cv-btn' href='' target='_blank'>{translation(lang,"cvbtn")}</a>
+                
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="footer">
+            © 2020 Arnaud Rey - {translation(lang,"footer")}
         </div>
 
        

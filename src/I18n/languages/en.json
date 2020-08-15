@@ -28,5 +28,15 @@
     "card-p03":"i like to resolve problems and create my own solution for the needs of my customers, i'm looking for a web developper or mobile developper work where i can grown and learn even more and where my limits are challenged.",
     "p04":"Membership management platform for associations. Allows you to view the list of its members and validate the payment of a membership fee. Personal project still in development.",
     "btnblack01":"Demo", 
-    "btnblack02":"Source Code"   
+    "btnblack02":"Source Code",
+    "mailh2":"Contact",
+    "mailspan":"Send me an email using this form",
+    "mailinput1":"Name",
+    "mailinput2":"Email",
+    "mailtextarea":"Message",
+    "mailbtn":"Send",
+    "linkedinbtn":"Get in touch on Linkedin",
+    "githubbtn":"My code on Github",
+    "cvbtn":"Download my CV",
+    "footer":"All rights reserved"      
 }

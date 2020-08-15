@@ -28,5 +28,15 @@
     "card-h203":"Aujourd'hui",  
     "card-p03":"J'aime résoudre des problèmes et créer des solutions adaptées aux besoins des clients, et je recherche un rôle de développeur web dans une entreprise où je peux continuer à apprendre et à maîtriser le métier.",
     "btnblack01":"Demo", 
-    "btnblack02":"Code Source"  
+    "btnblack02":"Code Source",
+    "mailh2":"Contact",
+    "mailspan":"Envoyez moi un mail via ce formulaire",
+    "mailinput1":"Nom",
+    "mailinput2":"Email",
+    "mailtextarea":"Message",
+    "mailbtn":"Envoyer",
+    "linkedinbtn":"Se connecter sur Linkedin",
+    "githubbtn":"Mon code sur Github",
+    "cvbtn":"Télécharger mon CV",
+    "footer":"Tous droits réservés"  
 }
