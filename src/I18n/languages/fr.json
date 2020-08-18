@@ -38,5 +38,14 @@
     "linkedinbtn":"Se connecter sur Linkedin",
     "githubbtn":"Mon code sur Github",
     "cvbtn":"Télécharger mon CV",
-    "footer":"Tous droits réservés"  
+    "footer":"Tous droits réservés",
+    "p09":"Intégration Web Front End à partir d'une maquette avec utilisation de composants ReactJs.",
+    "soustitre09":"Intégration Web",
+    "titre09":"Heaven",
+    "p10":"Composant créer par utilisation des fonctions javascript pour générer aléatoirement une chaîne de charactères, du DOM ainsi que de la fonction de copier/coller.",
+    "soustitre10":"Fonctionnalité",
+    "titre10":"Generateur de mots de passe complexes",
+    "p11":"Site personnel réalisé en REACT.JS,REDUX.JS pour l'utilisation du multi-langage, rendu conditionnel,téléchargement de fichier, formulaire de contact et liens externes.",
+    "soustitre11":"Application Web",
+    "titre11":"Portfolio personnel"    
 }

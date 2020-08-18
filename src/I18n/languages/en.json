@@ -38,5 +38,14 @@
     "linkedinbtn":"Get in touch on Linkedin",
     "githubbtn":"My code on Github",
     "cvbtn":"Download my CV",
-    "footer":"All rights reserved"      
+    "footer":"All rights reserved",
+    "p09":"Front End Web Integration from a mockup using ReactJs components.",
+    "soustitre09":"Web integration",
+    "titre09":"Heaven",
+    "p10":"Component created by using javascript functions to randomly generate a string of characters, the DOM as well as the copy / paste function.",
+    "soustitre10":"Features",
+    "titre10":"Complex password generator",
+    "p11":"Personal site made in REACT.JS, REDUX.JS for the use of multi-language, conditional rendering,file download, contact form and external links.",
+    "soustitre11":"Web App",
+    "titre11":"Personnal Porfolio"       
 }

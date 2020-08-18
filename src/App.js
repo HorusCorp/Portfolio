@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux'
-import {translation} from "./I18n/i18n";
+import {translation} from "./I18n/i18n"
+import Portfolio from './Portfolio'
+import Carousel from './carousel';
+// import SlideSunGYM from './SlideSunGYM';
+
+
 
 
 function App() {
@@ -9,7 +14,10 @@ function App() {
   const dispatch = useDispatch()
 
   return (
+   
     <div className="App">
+
+      {/* NAVBAR */}
       <div className='navbar'>
           <div className='empty-nav'>
 
@@ -31,7 +39,7 @@ function App() {
       </div>
       
 
-
+      {/* BANNER */}
       <div className='titre'>
         <div style={{width:'40%',display:'flex',justifyContent:'flex-end',marginRight:'55px'}}>
           <div className='avatar-pics' data-aos="fade-right" data-aos-duration="2500"></div>
@@ -42,18 +50,18 @@ function App() {
           <p className='titre-txt'>{translation(lang,"titre-txt")}</p>
         </div>
       </div>
+
+
+
+      {/* CAROUSEL DE LOGO */}
       <div className='logos'>
-        <img src='../vscode.jpg' alt='' width='90' height='35'></img>
-        <img src='../git.png' alt='' width='90' height='35'></img>
-        <img src='../node.png' alt='' width='90' height='35'></img>
-        <img src='../mongo.png' alt='' width='90' height='35'></img>
-        <img src='../react.png' alt='' width='90' height='35'></img>
-        <img src='../nextjs.png' alt='' width='90' height='35'></img>
+        <Carousel/>
       </div>
 
 
 
 
+      {/* PRESENTATION */}
       <div className='presentation'>
 
         <h2 className='titre-h1'>{translation(lang,"titre02")}</h2>
@@ -75,100 +83,17 @@ function App() {
         </div>
 
       </div>
+      {/* <SlideSunGYM/> */}
 
 
+      {/* PORTFOLIO */}
+      <Portfolio/>
 
 
-      <div className='portfolio'>
-
-        <h2 className='titre-h1'>{translation(lang,"titre03")}</h2>
-        <span className='titre-soustitre'>{translation(lang,"soustitre03")}</span>
-
-        <div className='project'>
-          <img src='./ametyst.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
-          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
-            <h3>{translation(lang,"titre04")}</h3>
-            <span>{translation(lang,"soustitre04")}</span>
-            <div className='language-used'>
-                <div>REACT</div>
-                <div>REDUX</div>
-                <div>MONGO DB</div>
-                <div>NODE & EXPRESS</div>
-                <div>CLOUDINARY</div>
-                <div>ANT DESIGN</div>
-                <div>CSS</div>
-            </div>
-            <p>{translation(lang,"p04")}</p>
-            <div className='project-btn'>
-              <a href='https://ametyst.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
-              <a href='https://github.com/HorusCorp/AssoGestionCotisation' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
-            </div>
-          </div>
-        </div>
+     
 
 
-        <div className='project'>
-          <img src='./Sungym.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
-          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
-            <h3>{translation(lang,"titre05")}</h3>
-            <span>{translation(lang,"soustitre05")}</span>
-            <div className='language-used'>
-                <div>NEXT JS</div>
-                <div>REDUX</div>
-                <div>MONGO DB</div>
-                <div>NODE & EXPRESS</div>
-                <div>STRIPE</div>
-                <div>CSS</div>
-            </div>
-            <p>{translation(lang,"p05")}</p>
-            <div className='project-btn'>
-              <a href='#' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
-              <a href='https://github.com/HorusCorp/SunGym' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
-            </div>
-          </div>
-        </div>
-
-      
-        <div className='project'>
-          <img src='./gameshop.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
-          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
-            <h3>{translation(lang,"titre06")}</h3>
-            <span>{translation(lang,"soustitre06")}</span>
-            <div className='language-used'>
-                <div>REACT</div>
-                <div>REDUX</div>
-                <div>MONGO DB</div>
-                <div>NODE & EXPRESS</div>
-                <div>CSS</div>
-            </div>
-            <p>{translation(lang,"p06")}</p>
-            <div className='project-btn'>
-            <a href='https://peaceful-anchorage-19337.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
-            <a href='https://peaceful-anchorage-19337.herokuapp.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a>
-            </div>
-          </div>
-        </div>
-
-        <div className='project'>
-          <img src='./ivaliceFR.png' alt='' width="520px" height="300px" data-aos="fade-right" data-aos-duration="2500"></img>
-          <div className='project-txt' data-aos="fade-left" data-aos-duration="2500">
-            <h3>{translation(lang,"titre07")}</h3>
-            <span>{translation(lang,"soustitre07")}</span>
-            <div className='language-used'>
-                <div>REACT</div>
-                <div>NODE</div>
-                <div>CSS</div>
-            </div>
-            <p>{translation(lang,"p07")}</p>
-            <div className='project-btn'>
-              <a href='http://www.ivalicefr.developpeur-lyon.com/' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack01")}</div></a>
-              <a href='https://github.com/HorusCorp/FFWOTV' target='_blank' rel="noopener noreferrer"><div className='btn-black'>{translation(lang,"btnblack02")}</div></a> 
-            </div>
-          </div>
-        </div>
-
-
-
+      {/* CONTACT */}
         <div className='contact-zone'>
 
           <h2 className='titre-h1'>{translation(lang,"mailh2")}</h2>
@@ -184,11 +109,9 @@ function App() {
             </div>
 
             <div className='links'>
-              
-                  <a className='linkedin-btn' href='' target='_blank'>{translation(lang,"linkedinbtn")}</a>
-                  <a className='github-btn' href='' target='_blank'>{translation(lang,"githubbtn")}</a>
-                  <a className='cv-btn' href='' target='_blank'>{translation(lang,"cvbtn")}</a>
-                
+                  <a className='linkedin-btn' href='https://www.linkedin.com/in/arnaud-rey-8a6695185/' target='_blank' rel="noopener noreferrer" >{translation(lang,"linkedinbtn")}</a>
+                  <a className='github-btn' href='https://github.com/HorusCorp' target='_blank' rel="noopener noreferrer" >{translation(lang,"githubbtn")}</a>
+                  <a className='cv-btn' href='https://drive.google.com/file/d/1PijS4_bNqq4cuSaqHOimrGI_sCfcS42k/view?usp=sharing' download>{translation(lang,"cvbtn")}</a>
             </div>
 
           </div>
@@ -199,12 +122,11 @@ function App() {
             © 2020 Arnaud Rey - {translation(lang,"footer")}
         </div>
 
-       
-
-
+      
       </div>
+    
 
-    </div>
+    
   );
 }
 
