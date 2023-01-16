@@ -1,3 +1,584 @@
 
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .navbar{
+        width: 100vw;
+    }
+    .logos{
+        display: none!important;
+    }
+    .empty-nav{
+        display: none!important;
+    }
+    .navbar ul{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul a{
+        display: none;
+    }
+    .titre{
+        flex-direction: column;
+        height: auto;
+    }
+    .titre div:nth-child(1){
+        margin: 0;
+        width: 100%!important;
+        height: 400px;
+        margin-top: 35px;
+        margin-right: 0!important;
+        background-position: center;
+    }
+    .titre-text{
+        margin-top: 25px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+    .presentation,.portfolio{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .presentation h2,.portfolio h2{
+        margin-left: 0;
+    }
+    .presentation span,.portfolio span{
+        margin-left: 0;
+    }
+    .card-zone{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+        height: auto;
+    }
+    .project img{
+        width: 100%;
+        height: 200px;
+    }
+    .project h3{
+        margin-top: 10px;
+    }
+    .project-txt{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .language-used{
+        justify-content: center;
+        background-color: #fafafa;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .project-btn{
+        flex-direction: column;
+    }
+    .project-btn a{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .project-btn a .btn-black{
+        margin-right: 0;
+    }
+    .contact-zone,.form-links{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-zone .titre-h1,.contact-zone span{
+        margin-left: 0!important;
+    }
+    .form{
+        margin-left: 0;
+        width: 90%;
+        align-items: center;
+    }
+    .form input,.form textarea{
+        width: 90%;
+    }
+    .form .btn-black{
+        width: 300px!important;
+        margin-bottom: 75px;
+        margin-top: 10px;
+    }
+    .links{
+        align-items: center;
+        margin-left: 0;
+    }
+    .links a{
+        width: 300px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar{
+        width: 100vw;
+    }
+    .logos{
+        display: none!important;
+    }
+    .empty-nav{
+        display: none!important;
+    }
+    .navbar ul{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul a{
+        display: none;
+    }
+    .titre{
+        flex-direction: column;
+        height: auto;
+    }
+    .titre div:nth-child(1){
+        margin: 0;
+        width: 100%!important;
+        height: 350px!important;
+        margin-top: 35px;
+        margin-right: 0!important;
+        background-position: center;
+    }
+    .titre-text{
+        margin-top: 25px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+    .presentation,.portfolio{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .presentation h2,.portfolio h2{
+        margin-left: 0;
+    }
+    .presentation span,.portfolio span{
+        margin-left: 0;
+    }
+    .card-zone{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+        height: auto;
+    }
+    .project img{
+        width: 100%;
+        height: 200px;
+    }
+    .project h3{
+        margin-top: 10px;
+    }
+    .project-txt{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .language-used{
+        justify-content: center;
+        background-color: #fafafa;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .project-btn{
+        flex-direction: column;
+    }
+    .project-btn a{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .project-btn a .btn-black{
+        margin-right: 0;
+    }
+    .contact-zone,.form-links{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-zone .titre-h1,.contact-zone span{
+        margin-left: 0!important;
+    }
+    .form{
+        margin-left: 0;
+        width: 90%;
+        align-items: center;
+    }
+    .form input,.form textarea{
+        width: 90%;
+    }
+    .form .btn-black{
+        width: 300px!important;
+        margin-bottom: 75px;
+        margin-top: 10px;
+    }
+    .links{
+        align-items: center;
+        margin-left: 0;
+    }
+    .links a{
+        width: 300px;
+    }
+    .footer{
+        text-align: center;
+    }
+    
+}
+
+
+/* redmi note Xioamin 5_7 et samsung note 9*/
+@media only screen and (min-width: 393px) and (max-width: 767px) {
+
+}
+
+
+
+/*GALAXY NOTE 9*/
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+
+}
+
+
+
+/* ----------- iPhone 11, 11X / GALAXY FOLD----------- */
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 3) {
+    .navbar{
+        width: 100vw;
+    }
+    .empty-nav{
+        display: none!important;
+    }
+    .navbar ul{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul a{
+        display: none;
+    }
+    .titre{
+        flex-direction: column;
+        height: auto;
+    }
+    .titre p{
+        font-size: 14px!important;
+    }
+    .titre div:nth-child(1){
+        margin: 0;
+        width: 100%!important;
+        height: 250px!important;
+        margin-top: 35px;
+        margin-right: 0!important;
+        background-position: center;
+    }
+    .avatar-pics{
+        height: 250px!important;
+    }
+    .titre-text{
+        margin-top: 25px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .titre-text p{
+        font-size: 14px!important;
+    }
+    .presentation,.portfolio{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .presentation h2,.portfolio h2{
+        margin-left: 0;
+    }
+    .presentation span,.portfolio span{
+        margin-left: 0;
+    }
+    .card-zone{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+        height: auto;
+    }
+    .project img{
+        width: 100%;
+        height: 200px;
+    }
+    .project h3{
+        margin-top: 10px;
+    }
+    .project-txt{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .language-used{
+        justify-content: center;
+        background-color: #fafafa;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .project-btn{
+        flex-direction: column;
+    }
+    .project-btn a{
+        margin-bottom: 10px;
+        width: 250px!important;
+    }
+    .project-btn a .btn-black{
+        margin-right: 0;
+    }
+    .contact-zone,.form-links{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-zone .titre-h1,.contact-zone span{
+        margin-left: 0!important;
+    }
+    .form{
+        margin-left: 0;
+        width: 90%;
+        align-items: center;
+    }
+    .form input,.form textarea{
+        width: 90%;
+    }
+    .form .btn-black{
+        width: 200px!important;
+        margin-bottom: 75px;
+        margin-top: 10px;
+    }
+    .links{
+        align-items: center;
+        margin-left: 0;
+    }
+    .links a{
+        width: 250px!important;
+    }
+    .footer{
+        text-align: center;
+    }
+    .logos{
+        display: none;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IPHONE 6/7/8 PLUS */
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width: 653px) and (min-device-width: 280px){
+    .navbar{
+        width: 100vw;
+    }
+    .empty-nav{
+        display: none!important;
+    }
+    .navbar ul{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul a{
+        display: none;
+    }
+
+    .titre{
+        flex-direction: column;
+        height: auto;
+    }
+    .titre div:nth-child(1){
+        margin: 0;
+        width: 100%!important;
+        height: 400px!important;
+        margin-top: 35px;
+        margin-right: 0!important;
+        background-position: center;
+    }
+    .titre-text{
+        margin-top: 25px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    .presentation,.portfolio{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .presentation h2,.portfolio h2{
+        margin-left: 0;
+    }
+    .presentation span,.portfolio span{
+        margin-left: 0;
+    }
+    .card-zone{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+        height: auto;
+    }
+    .project img{
+        width: 100%;
+        height: 200px;
+    }
+    .project h3{
+        margin-top: 10px;
+    }
+    .project-txt{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .language-used{
+        justify-content: center;
+        background-color: #fafafa;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .project-btn{
+        flex-direction: column;
+    }
+    .project-btn a{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .project-btn a .btn-black{
+        margin-right: 0;
+    }
+    .contact-zone,.form-links{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-zone .titre-h1,.contact-zone span{
+        margin-left: 0!important;
+    }
+    .form{
+        margin-left: 0;
+        width: 90%;
+        align-items: center;
+    }
+    .form input,.form textarea{
+        width: 90%;
+    }
+    .form .btn-black{
+        width: 300px!important;
+        margin-bottom: 75px;
+        margin-top: 10px;
+    }
+    .links{
+        align-items: center;
+        margin-left: 0;
+    }
+    .links a{
+        width: 300px;
+    }
+}

@@ -12,8 +12,11 @@ function Carousel() {
                    <img src='../mongo.png' alt=''/>
                    <img src='../react.png' alt=''/>
                    <img src='../redux.jfif' alt=''/>
+                   <img src='../context.png' alt=''/>
                    <img className='bigger' src='../nextjs.png' alt=''/>
                    <img src='../sass.png' alt=''/>
+                   <img className='bigger' src='../firebase.png' alt=''/>
+                   <img src='../strapi.jpg' alt=''/>
                 </div>
                 <div className='slide'>
                    <img src='../vscode.jpg' alt=''/>
@@ -23,8 +26,11 @@ function Carousel() {
                    <img src='../mongo.png' alt=''/>
                    <img src='../react.png' alt=''/>
                    <img src='../redux.jfif' alt=''/>
+                   <img src='../context.png' alt=''/>
                    <img className='bigger' src='../nextjs.png' alt=''/>
                    <img src='../sass.png' alt=''/>
+                   <img className='bigger' src='../firebase.png' alt=''/>
+                   <img src='../strapi.jpg' alt=''/>
                 </div>  
             </div>
         </div>

@@ -4,7 +4,27 @@ import { useDispatch, useSelector } from 'react-redux'
 import {translation} from "./I18n/i18n"
 import Portfolio from './Portfolio'
 import Carousel from './carousel';
-// import SlideSunGYM from './SlideSunGYM';
+import emailjs from 'emailjs-com';
+
+
+
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('gmail', 'portfolio', e.target, 'user_7KR033XElGoFAFDzhs796')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset()
+}
+ 
+
+
+ 
+
 
 
 
@@ -12,6 +32,11 @@ import Carousel from './carousel';
 function App() {
   const lang = useSelector(state => state.languageReducer.language)
   const dispatch = useDispatch()
+
+  // const [email, setEmail] = useState();
+  // const [nom, setNom] = useState();
+  // const [message, setMessage] = useState();
+
 
   return (
    
@@ -24,9 +49,9 @@ function App() {
           </div>
 
           <ul>
-            <li>{translation(lang,"nav-apropos")}</li>
-            <li>{translation(lang,"nav-portfolio")}</li>
-            <li>{translation(lang,"nav-contact")}</li>
+            <a href="#a-propos"><li>{translation(lang,"nav-apropos")}</li></a>
+            <a href="#portfolio"><li>{translation(lang,"nav-portfolio")}</li></a>
+            <a href="#contact"><li>{translation(lang,"nav-contact")}</li></a>
             <li>
             <div className='box-btn'>
               <div className='btn btn-fr' onClick={(() => dispatch({ type: 'fr' }))}><img src='../france.svg' alt='fr' width='30' heigh='20'></img></div>
@@ -40,7 +65,7 @@ function App() {
       
 
       {/* BANNER */}
-      <div className='titre'>
+      <div id="a-propos" className='titre'>
         <div style={{width:'40%',display:'flex',justifyContent:'flex-end',marginRight:'55px'}}>
           <div className='avatar-pics' data-aos="fade-right" data-aos-duration="2500"></div>
         </div>
@@ -83,7 +108,7 @@ function App() {
         </div>
 
       </div>
-      {/* <SlideSunGYM/> */}
+
 
 
       {/* PORTFOLIO */}
@@ -94,19 +119,39 @@ function App() {
 
 
       {/* CONTACT */}
-        <div className='contact-zone'>
+        <div id="contact" className='contact-zone'>
 
           <h2 className='titre-h1'>{translation(lang,"mailh2")}</h2>
           <span className='titre-soustitre'>{translation(lang,"mailspan")}</span>
     
           <div className="form-links">
 
-            <div className='form'>
-              <input type="text" placeholder={translation(lang,"mailinput1")}></input>
-              <input type='email' placeholder={translation(lang,"mailinput2")}></input>
-              <textarea placeholder={translation(lang,"mailtextarea")}></textarea>
-              <div className='btn-black' type='submit'>{translation(lang,"mailbtn")}<img src='' alt=''></img></div>
-            </div>
+            <form className='form' onSubmit={sendEmail}>
+              <input 
+                  id='user_name' 
+                  name="user_name" 
+                  type="text" 
+                  placeholder={translation(lang,"mailinput1")} 
+                  // onChange={(e) => setNom(e.target.value)}
+                >
+              </input>
+              <input 
+                  id='user_email' 
+                  name="user_email" 
+                  type='email' 
+                  placeholder={translation(lang,"mailinput2")} 
+                  // onChange={(e) => setEmail(e.target.value)}
+                >
+              </input>
+              <textarea 
+                  id='message' 
+                  name="message" 
+                  placeholder={translation(lang,"mailtextarea")} 
+                  // onChange={(e) => setMessage(e.target.value)}
+                >
+                </textarea>
+              <button  className='btn-black' type='submit'>{translation(lang,"mailbtn")}</button>
+            </form>
 
             <div className='links'>
                   <a className='linkedin-btn' href='https://www.linkedin.com/in/arnaud-rey-8a6695185/' target='_blank' rel="noopener noreferrer" >{translation(lang,"linkedinbtn")}</a>
